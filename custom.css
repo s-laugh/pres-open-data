@@ -3,3 +3,7 @@
     float: left;
     font-size: smaller;
 }
+
+.clear {
+    clear: both;
+}
