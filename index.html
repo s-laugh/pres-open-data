@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Open Data</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="./custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Open Data</h1>
+					<section>
+						<lead>A Technical View</lead>
+						<p><small>Created by Shaun Laughland</small></p>
+					</section>
+					<section>
+						<p>Note: Focus on us sharing or exposing data, not on consuming 3rd party open data.</p>
+					</section>
+				</section>
+				<section>
+					<h2>Challenges</h2>
+					<section>
+						<h3>Interoperability</h3>
+						<p>If the data is open but no one can understand it, it's useless</p>
+						<ul>
+							<li class="fragment fade-up">Data Categorization</li>
+							<li class="fragment fade-up">Data Flows - Ownership</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Availability</h3>
+						<p>Who can access what data, how do we know and manage it</p>
+						<ul>
+							<li class="fragment fade-up">Security / Authentication</li>
+							<li class="fragment fade-up">Legacy Systems Integration</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Trends with Open Data</h2>
+					<ul>
+						<li>Educational Purposes</li>
+						<li>Learning from Success & Failure</li>
+						<li class="fragment highlight-blue">Client Concent</li>
+						<li>Across many industries</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Options</h2>
+					<section>
+						<h3>Centralize Data</h3>
+						<p>Centralizing data, provide single point for exposing data</p>
+						<div class="col fragment fade-up">
+							<h4>Benefits</h4>
+							<ul>
+								<li>Manage Interoperability</li>
+								<li>Single point for access</li>
+							</ul>
+						</div>
+						<div class="col fragment fade-up">
+							<h4>Risks</h4>
+							<ul>
+								<li>Consolidating data from legacy</li>
+								<li>Single point of failure</li>
+								<li>Long-tem maintainability (large scale solution)</li>
+								<li class="fragment highlight-red">Big Brother Perception</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h3>Big Brother Perception - Centralize Data</h3>
+						<p>ESDC has a history...</p>
+						<ul style="font-size: medium;">
+							<li>The Longitudinal Labour Force File (LLFF) - Failure
+								<br><a target="_blank" href="https://mailman.apnic.net/mailing-lists/apple/archive/2000/05/msg00035.html">HRDC Dismantles Longitudinal Labour Force File Databank (Canada)</a>
+								<br><a target="_blank" href="https://www.theglobeandmail.com/news/national/ottawa-pulls-plug-on-big-brother-database/article4164318/">Ottawa pulls plug on Big Brother database</a>
+							</li>
+							<li>Advance Passenger Information/Passenger Name Record - Restricted
+								<br><a target="_blank" href="https://www.priv.gc.ca/en/opc-news/news-and-announcements/2002/02_05_b_020926_2/">News Release criticizes CCRA's plans for "Big Brother" database - September 26, 2002 - Privacy Commissioner of Canada - Office of the Privacy Commissioner</a>
+								<br><a target="_blank" href="https://www.itbusiness.ca/news/privacy-complaints-prompt-ccra-database-purge/5647">Privacy complaints prompt CCRA database purge</a>
+							</li>
+							<li>E311 Data Matching - Limited defined scope
+								<br><a target="_blank" href="https://www.priv.gc.ca/en/privacy-topics/#014">https://www.priv.gc.ca/en/privacy-topics/#014 </a>
+								<br><a target="_blank" href="https://www.priv.gc.ca/en/privacy-topics/airports-and-borders/your-privacy-at-airports-and-borders/#toc4">https://www.priv.gc.ca/en/privacy-topics/airports-and-borders/your-privacy-at-airports-and-borders/#toc4</a>
+								<br><a target="_blank" href="https://www.oipc.ab.ca/media/389571/Report_Government_Information_Sharing_Jan2015.pdf">Government Information Sharing</a>
+							</li>
+						</ul>
+						Takeaway: We need a very clear and scoped mandate to centralize data.
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
